@@ -17,6 +17,10 @@ p, span, h1, h2, h3, h4, h5, h6 {
     background-color: black !important;
 }
 
+.opacity-1 {
+    opacity: 1 !important;
+}
+
 .fs-custom-1 {
     font-size: 5vh;
 }
