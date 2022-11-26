@@ -3,9 +3,10 @@
 
 <head>
     <!-- Inclusão do JS da página -->
-    <script src="./js/index.js"></script>
     <link rel="stylesheet" href="./lib/bootstrap/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="./lib/bootstrap/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script type="module" src="./js/index.js"></script>
 </head>
 
 <body>
@@ -20,7 +21,7 @@
         </div>
     </header>
 
-    <main>
+    <main class="container">
         <div class="row text-center">
             <div class="col-12">
                 <span class="fs-custom-1 fw-600 "><span class="purple">B</span>ELEZA</span>
@@ -38,38 +39,24 @@
         <div class="row mt-4">
             <div class="col-12">
                 <div id="carouselButtons" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./assets/perfume_1.png" class="d-block w-75 mx-auto">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/perfume_2.png" class="d-block w-75 mx-auto">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/perfume_3.png" class="d-block w-75 mx-auto">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/perfume_4.png" class="d-block w-75 mx-auto">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/perfume_5.png" class="d-block w-75 mx-auto">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/perfume_6.png" class="d-block w-75 mx-auto">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev opacity-1" type="button" data-bs-target="#carouselButtons"
-                        data-bs-slide="prev">
-                        <span class="purple"><i class="fa-solid fa-caret-left"></i></span>
+                    <!-- Inserção dos produtos -->
+                    <div class="carousel-inner" id="carousel_items"></div>
+                    <button class="carousel-control-prev opacity-1 button-heigh" type="button"
+                        data-bs-target="#carouselButtons" data-bs-slide="prev">
+                        <span class="purple fs-2"><i class="fa-solid fa-caret-left"></i></span>
                     </button>
-                    <button class="carousel-control-next opacity-1" type="button" data-bs-target="#carouselButtons"
-                        data-bs-slide="next">
-                        <span class="purple"><i class="fa-solid fa-caret-right"></i></span>
+                    <button class="carousel-control-next opacity-1 button-heigh" type="button"
+                        data-bs-target="#carouselButtons" data-bs-slide="next">
+                        <span class="purple fs-2"><i class="fa-solid fa-caret-right"></i></span>
                     </button>
                 </div>
             </div>
         </div>
     </main>
+    <footer class="container">
+        <!-- Inserção do footer -->
+        <script>footer()</script>
+    </footer>
 </body>
 
 </html>
